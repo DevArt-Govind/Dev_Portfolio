@@ -57,7 +57,7 @@ export class WorkComponent implements OnInit {
     const smoother = ScrollSmoother.create({
       wrapper: '#smooth-wrapper',
       content: '#smooth-content',
-      smooth: 7,
+      smooth: 5,
       normalizeScroll: true, // prevents address bar from showing/hiding on most devices, solves various other browser inconsistencies
       ignoreMobileResize: true, // skips ScrollTrigger.refresh() on mobile resizes from address bar showing/hiding
       effects: true,
