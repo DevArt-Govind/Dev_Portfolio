@@ -1,0 +1,64 @@
+$primery-font: "Bebas Neue", "sans-serif";
+$secondary-font: "Space Grotesk", "sans-serif";
+$main-background: #121314;
+$main-text-color: #F8F8F8;
+$main-text-color-light: #f8f8f8cb;
+
+.navbar-nav {
+  .nav-link {
+    color: $main-text-color;
+    font: 500 1rem $secondary-font;
+    background-color: $main-background;
+    margin: 0 0.4rem;
+    border-radius: 8px;
+    padding: 0.6rem 1rem;
+  }
+}
+.hamburger {
+  cursor: pointer;
+  background: $main-background;
+  padding: 1rem;
+  border-radius: 8px;
+  span {
+    display: inline-block;
+    width: 40px;
+    height: 3px;
+    background-color: $main-text-color;
+  }
+}
+.hidden-nav {
+  display: none;
+}
+.navigation-wrapper {
+  background-color: #353535;
+  padding: 0.3rem 1rem;
+  border-radius: 14px;
+  gap: 0.4rem;
+  transition: all 0.2s linear;
+}
+
+// custom cursor style
+.cursor{
+  position: fixed;
+  width: 40px;
+  height: 40px;
+  margin-left: -20px;
+  margin-top: -20px;
+  border-radius: 50%;
+  border: 2px solid $main-text-color;
+  transition: transform 0.3s ease;
+  transform-origin: center center;
+  pointer-events: none;
+  z-index: 1000;
+}
+
+.grow, .grow-small{
+  transform: scale(4);
+  background: white;
+  mix-blend-mode: difference;
+  border: none;
+}
+
+.grow-small{
+  transform: scale(2);
+}

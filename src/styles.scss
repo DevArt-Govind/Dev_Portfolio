@@ -1,0 +1,44 @@
+@import '~bootstrap/dist/css/bootstrap.min.css';
+
+// $primary-font:'Satoshi', sans-serif;
+$primery-font: "Bebas Neue", "sans-serif";
+$secondary-font: "Space Grotesk", "sans-serif";
+
+$main-background: #121314;
+$main-text-color: #F8F8F8;
+$main-text-color-light: #f8f8f8cb;
+
+
+*,::after,::before{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0 solid #48515e;
+}
+body{
+  scroll-behavior: smooth;
+  background-color: $main-background;
+}
+
+.main-container-wrapper {
+  padding: 2rem 3rem 0 3rem;
+
+}
+@media (max-width: 600px) {
+  .main-container-wrapper {
+    padding: 0.6rem;
+
+  }
+}
+@media (min-width: 600px) and (max-width:800px) {
+  .main-container-wrapper {
+    padding: 1rem;
+
+  }
+}
+@media (min-width: 800px) and (max-width:1024px) {
+  .main-container-wrapper {
+    padding: 1.4rem;
+
+  }
+}

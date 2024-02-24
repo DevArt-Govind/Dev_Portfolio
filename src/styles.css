@@ -1,0 +1,21 @@
+/* You can add global styles to this file, and also import other style files */
+*, ::after, ::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0 solid #48515e;
+}
+
+body {
+  scroll-behavior: smooth;
+}
+
+.main-container-wrapper {
+  padding: 1.5rem;
+}
+
+section {
+  height: 95vh;
+  background-color: #F4F5F7;
+  margin-bottom: 1.5rem;
+}/*# sourceMappingURL=styles.css.map */

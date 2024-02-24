@@ -1,0 +1,231 @@
+$primery-font: "Bebas Neue",
+"sans-serif";
+$secondary-font: "Space Grotesk",
+"sans-serif";
+$main-background: #121314;
+$main-text-color: #F8F8F8;
+$main-text-color-light: #f8f8f8cb;
+
+
+.contact-content {
+
+  background-color: #E1DFDD;
+  border-radius: 18px;
+
+  .contact-heading {
+    font: 700 6rem $primery-font;
+    color: transparent;
+    background: linear-gradient(180deg, $main-text-color 0 50%, $main-background 50% 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    position: relative;
+    top: -62px;
+  }
+
+  button {
+    box-shadow: 5px 5px 15px #cecdcd, -8px -8px 12px #eee;
+    background-color: #E1DFDD;
+    border-radius: 10px;
+    padding: 1rem;
+    width: 100%;
+
+    p {
+      font: 400 1.2rem $secondary-font;
+      color: rgba(0, 0, 0, 0.7);
+      border: 2px solid rgba(0, 0, 0, 0.3);
+      text-transform: capitalize;
+      margin-bottom: 0;
+      border-radius: 8px;
+      padding: 0.6rem;
+    }
+
+    a {
+      font: 600 1.6rem $secondary-font;
+      color: $main-background;
+      text-decoration: none;
+    }
+  }
+}
+
+.email-wrapper {
+  position: relative;
+  img {
+    position: absolute;
+    left: 130px;
+    top: -50px;
+  }
+}
+
+.contact-flexbox {
+  position: relative;
+  top: -40px;
+}
+
+.get-touch {
+  width: 150px;
+}
+
+.get-touch-inner {
+  width: 100px;
+  position: relative;
+  width: 80px;
+  left: -115px;
+}
+
+.social-media-wrapper {
+  position: relative;
+  left: 55px;
+  top: 40px;
+  text-align: end;
+
+  a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font: 600 4.5rem $primery-font;
+    color: $main-background;
+    letter-spacing: 3px;
+    transition: all 0.4s linear;
+    display: flex;
+    &:hover{
+      color: $main-background;
+
+    }
+    i {
+      transform: rotate(-45deg);
+    }
+  }
+}
+
+.get-touch-wrapper {
+  position: relative;
+  top: -180px;
+  left: 100px;
+}
+
+.contact-illustration {
+  svg {
+    position: relative;
+    right: 150px;
+    top: 50px;
+  }
+}
+
+
+@media (min-width:320px) and (max-width:729px) {
+  .row{
+    --bs-gutter-x: 0 !important;
+    --bs-gutter-y: 0 !important;
+  }
+  .contact-content{
+    padding: 0.8rem;
+  }
+  .contact-heading{
+    font-size: 2.5rem !important;
+    top: -39px !important;
+  }
+  .email-wrapper{
+    top: 40px;
+    button{
+      flex-direction: column;
+      a{
+        font-size: 1.2rem ;
+      }
+    }
+    img{
+      left: 195px !important;
+      top: -35px !important;
+      width: 90px !important;
+    }
+  }
+  .get-touch-wrapper{
+    display: none;
+  }
+  .social-media-wrapper {
+    left: 0 !important;
+    a{
+      font-size: 3.5rem !important;
+    }
+  }
+  .contact-content-wrapper{
+    margin-bottom: 0 !important;
+  }
+  .contact-illustration svg{
+    right: 0 !important;
+  }
+}
+
+@media (min-width:450px) and (max-width:600px) {
+  .contact-heading{
+    font-size: 3.5rem !important;
+    top: -49px !important;
+  }
+}
+@media (min-width:600px) and (max-width:800px) {
+  .contact-content{
+    padding: 1rem;
+  }
+  .contact-content-wrapper{
+    margin-bottom: 0 !important;
+  }
+  .contact-heading{
+    font-size: 4.5rem !important;
+    top: -59px !important;
+  }
+  .contact-illustration{
+    svg{
+      right: 20px !important;
+    }
+  }
+  .contact-footer-wrapper{
+    flex-direction: row !important;
+    justify-content: center;
+    .get-touch-wrapper{
+      position: unset !important;
+      align-self: center;
+    }
+  }
+
+}
+
+@media (min-width:768px) and (max-width:1024px) {
+  .contact-content-wrapper {
+    margin-bottom: 0 !important;
+  }
+  .contact-content{
+    button{
+      width: auto !important;
+    }
+    .get-touch-wrapper{
+      display: none !important;
+    }
+    .social-media-wrapper{
+      left: 35px;
+      top: 38px;
+    a{
+      margin-bottom: -0.3rem;
+      font-size: 2.5rem;
+    }
+    }
+  }
+  .contact-illustration svg{
+    right: 80px !important;
+    width: 400px !important;
+  }
+
+}
+@media (min-width:1024px) {
+  .email-wrapper{
+    button{
+      width: auto !important;
+    }
+  }
+  .contact-illustration svg{
+    right: 120px;
+    top: 80px;
+    width: 500px !important;
+  }
+  .get-touch-wrapper{
+    top: -25px;
+    left: 60px;
+  }
+}

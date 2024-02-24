@@ -1,0 +1,177 @@
+@font-face {
+  font-family: 'Roxborough CF';
+  src: url('../../assets/fonts/font-1/RoxboroughCF-Medium.otf') format('woff2'),
+       url('../../assets/fonts/font-1/RoxboroughCF-Bold.otf') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+$primery-font: "Bebas Neue", "sans-serif";
+$secondary-font: "Space Grotesk", "sans-serif";
+
+$main-background: #121314;
+$main-text-color: #F8F8F8;
+$main-text-color-light: #f8f8f8cb;
+
+.hero-content-wrapper {
+  position: relative;
+  top: 30px;
+  padding-bottom: 5rem;
+  .hero-heading {
+    h1 {
+      font: 700 7rem $primery-font;
+      color: $main-text-color;
+      text-transform: uppercase;
+      letter-spacing: 4px;
+      // display: inline;
+    }
+    .designer-text-img {
+      width: 450px;
+    }
+  }
+  .name-text-wrapper {
+    position: relative;
+    left: 70px;
+
+    overflow: hidden;
+    h1 {
+      font: 700 4.5rem $primery-font;
+      color: $main-text-color;
+      text-transform: uppercase;
+      letter-spacing: 4px;
+    }
+    P {
+      font: 400 2rem $secondary-font;
+      color: $main-text-color-light;
+      // width: 60%;
+      margin-bottom: 0;
+    }
+  }
+  .hero-profile-wrapper {
+    position: relative;
+    // left: 70px;
+    overflow: hidden;
+    .profile-img {
+      width: 100%;
+      filter: grayscale(1);
+    }
+  }
+}
+.scroll-inner-circle{
+  position: relative;
+  top: -58px;
+  left: 14px;
+}
+.hero-profile-wrapper{
+  overflow: hidden;
+}
+
+
+// media queries for mobile devices
+@media (min-width : 320px) and (max-width: 600px){
+  .hero-content{
+    .hero-heading{
+      flex-direction: column;
+      align-items: baseline !important;
+      img{
+        width: 300px !important;
+      }
+      h1{
+        font-size: 5rem !important;
+      }
+    }
+    .hero-profile-wrapper{
+      left: 0 !important;
+    }
+    .name-text-wrapper{
+      left: 0 !important;
+      h1{
+        font-size: 3rem !important;
+      }
+      p{
+        font-size: 1.4rem !important;
+      }
+    }
+    .hero-text-wrapper{
+      flex-direction: column !important;
+    }
+    .bounce-scroll-text{
+      margin-top: 4rem;
+    }
+  }
+}
+
+
+@media (min-width : 600px) and (max-width: 800px){
+  .hero-heading{
+    img{
+      width: 320px !important;
+    }
+    h1{
+      font-size: 6rem !important;
+    }
+  }
+  .hero-profile-wrapper{
+    left: 0 !important;
+  }
+  .name-text-wrapper{
+    left: 0 !important;
+    h1{
+      font-size: 4.8rem !important;
+    }
+    p{
+      font-size: 2rem !important;
+    }
+  }
+  .bounce-scroll-text{
+    display: none !important;
+  }
+}
+@media (min-width : 768px) and (max-width: 800px){
+  .name-text-wrapper{
+    left: 70px !important;
+  }
+
+}
+@media (min-width:768px) and (max-width:1200px) {
+  .hero-content-wrapper{
+    .hero-profile-wrapper{
+      left: 0 ;
+      top: 155px;
+    }
+  }
+  .hero-text-wrapper{
+    position: relative;
+    top: 150px;
+    left: -60px;
+  }
+  .hero-heading{
+    img{
+      width: 320px !important;
+    }
+    h1{
+      font-size: 6rem !important;
+      width: 430px !important;
+    }
+  }
+  .bounce-scroll-text{
+    left: 70px;
+    position: relative;
+    top: 40px;
+  }
+}
+@media (min-width:1200px) {
+  .name-text-wrapper {
+    left: 0 !important;
+    top: -25px;
+  }
+  .hero-profile-wrapper{
+    width: 33%  !important;
+  }
+}
+
+@media (min-width:1440px)  {
+  .hero-profile-wrapper{
+    width: 25%  !important;
+  }
+}
