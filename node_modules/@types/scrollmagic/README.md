@@ -1,0 +1,15 @@
+# Installation
+> `npm install --save @types/scrollmagic`
+
+# Summary
+This package contains type definitions for scrollmagic (https://scrollmagic.io/).
+
+# Details
+Files were exported from https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/scrollmagic.
+
+### Additional Details
+ * Last updated: Wed, 22 Nov 2023 00:24:48 GMT
+ * Dependencies: none
+
+# Credits
+These definitions were written by [Tim Weise](https://github.com/switchnollie).
