@@ -1,7 +1,10 @@
 [build]
   base = "."
-  command = "npm run build --prod"
+  command = "npm run build "
+  # NODE_ENV=production ./node_modules/.bin/ng build --prod
+  commandOrigin = "config"
   publish = "dist/dev_Portfolio"
+  publishOrigin = "config"
 
 [[redirects]]
   from = "/*"

@@ -38,9 +38,6 @@ THE SOFTWARE.
 gsap
 Standard 'no charge' license: https://gsap.com/standard-license. Club GSAP members get more: https://gsap.com/licensing/. Why GreenSock doesn't employ an MIT license: https://gsap.com/why-license/
 
-gsap-trial
-This package should only be used by individuals/companies with an active Club GSAP membership. See https://gsap.com/pricing/. Licensing: https://gsap.com/licensing/
-
 rxjs
 Apache-2.0
                                Apache License
